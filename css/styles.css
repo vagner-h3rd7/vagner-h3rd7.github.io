@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu&display=swap");
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background: #292e36;
+  font-family: "Ubuntu", sans-serif;
+  color: #c4c4c4;
+}
+
+h1 {
+  font-family: "Roboto", "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 30px;
+}
+
+section.card-perfil {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.curve {
+  background: url(../img/curv.svg) no-repeat top left;
+  background-size: contain;
+  margin: 1rem;
+  padding: 2rem;
+}
+
+.card-perfil img {
+  background: #4a5668;
+  width: 172px;
+  height: 172px;
+  border-radius: 32px;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.25);
+}
+  
+.card-perfil div {
+  margin-left: 1rem;
+  align-self: center;
+  text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.card-perfil a {
+  text-shadow: 2px 2px #ff0000;
+}
+
+@media (max-width: 525px) {
+  section.card-perfil {
+      justify-content: center;
+  }
+
+  .card-perfil div {
+    margin: 1rem;
+  }
+
+  .curve {
+    margin: 4rem;
+  }
+}
